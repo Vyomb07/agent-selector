@@ -321,7 +321,7 @@ def ad():
 
 # ---------------Function for Main menu -------------##
 def main1():
-    print('\n\n-----Agent Selection------')
+    print('\n\n=-----Agent Selector------=')
     print('1)Add Details of Agent')
     print('2)Report Issue ')
     print('3)Exit')
@@ -334,7 +334,6 @@ def main1():
         exit()
     else:
         print('Wrong Choice')
-
     main1()
 
 
