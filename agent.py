@@ -7,8 +7,8 @@ import pandas as pd
 data = {}
 
 
-def status(l):
-    if l == 'YES':
+def status(l_inp):
+    if l_inp == 'YES':
         return True
     return False
 
@@ -106,6 +106,7 @@ class Ad:
 
 data_time = {}
 
+
 class Dis_data:
     def __init__(self, data):
         self.data = data
@@ -151,6 +152,14 @@ class Mode:
         else:
             print("Try Again....")
             main1()
+        try:
+            Mode()
+        except Exception:
+            print('Invalid Input')
+        finally:
+            print("Press Enter to continue ...")
+            input()
+            Mode()
 
     @staticmethod
     def all_avail():
@@ -225,6 +234,7 @@ class Mode:
                     else:
                         del data_time1[temp_key]
                         max1(issue)
+
         limiter = 0
 
         if Counter == 1:
@@ -388,12 +398,11 @@ def main1():
 
 
 if __name__ == '__main__':
-    main1()
-    # try:
-    #    main1()
-    # except Exception:
-    #    print('Invalid Input')
-    # finally:
-    #    print("Press Enter to continue ...")
-    #    input()
-    #    main1()
+    try:
+        main1()
+    except Exception:
+        print('Invalid Input')
+    finally:
+        print("Press Enter to continue ...")
+        input()
+        main1()
