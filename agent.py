@@ -175,6 +175,8 @@ class Mode:
             if limiter == 0:
                 print('No Agent is available regarding your issue........\nTry Again.......')
                 main1()
+            input('\n\n Press Any key to go to main menu = ')
+            main1()
 
         elif Counter == 2:
             print("\n\nAvailable agents are : \n")
@@ -187,6 +189,8 @@ class Mode:
             if limiter == 0:
                 print('No Agent is available regarding your issue........\nTry Again.......')
                 main1()
+            input('\n\n Press Any key to go to main menu = ')
+            main1()
 
     # -----------------Function For Least_busy mode ------------------------------##
 
@@ -262,6 +266,8 @@ class Mode:
                 if limiter == 0:
                     print('No agent found for your issue..........\nTry Again..................')
                     main1()
+            input('\n\n Press Any key to go to main menu = ')
+            main1()
 
         elif Counter == 2:
             tom = 1
@@ -274,6 +280,8 @@ class Mode:
             else:
                 print('No agent found for your issue..........\nTry Again..................')
                 main1()
+            input('\n\n Press Any key to go to main menu = ')
+            main1()
 
     # -----------------Function for All Random mode--------------------------##
 
@@ -318,6 +326,8 @@ class Mode:
                 if limiter == 0:
                     print('No agent found for your issue..........\nTry Again..................')
                     main1()
+            input('\n\n Press Any key to go to main menu = ')
+            main1()
         elif Counter == 2:
             vall = ran_keys(first_issue)
             name3, s3, t3, r3 = vall
@@ -328,6 +338,8 @@ class Mode:
             else:
                 print('No agent found for your issue..........\nTry Again..................')
                 main1()
+            input('\n\n Press Any key to go to main menu = ')
+            main1()
 
 
 # ---------------Function for adding details of agent menu -------------##
